@@ -161,3 +161,6 @@ cython_debug/
 
 # Pyenv local config file
 .python-version
+
+# Process Account Entries job result dir
+src/jobs/account_entries/result/
