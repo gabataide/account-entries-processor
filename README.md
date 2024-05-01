@@ -147,8 +147,8 @@ Based on default input files for balances and withdraws found in `src/jobs/accou
 
 Alternatively, you may provide your own input CSV files for balance and/or withdraws.  Use parameters `-b`/`--balances`  and `-w`/`--withdraws`, for example:
 ```
-python src/main.py -b -w path/to/my/balances_file.csv -w path/to/my/withdraws_file.csv
-python src/main.py --balances -w path/to/my/balances_file.csv --withdraws path/to/my/withdraws_file.csv
+python src/main.py -b path/to/my/balances_file.csv -w path/to/my/withdraws_file.csv
+python src/main.py --balances path/to/my/balances_file.csv --withdraws path/to/my/withdraws_file.csv
 ``` 
 
 # Improvements
