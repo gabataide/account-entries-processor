@@ -42,7 +42,7 @@ The withdraw amount of a given withdraw order has to be subtracted from the bala
 - If a balance value is not enough, check if the account_id has more than one balance at its disposal and, if so, withdraw the rest from another balance in the same account_id;
 - If the withdraw value is greater than the sum of all balance values left in the account, the withdraw should not happen;
 - If a balance in the account reaches 0, it's status should be changed to "BALANCE WITHDREW";
-0 The initial_balance has to have the initial value before the withdraws, and the available_balance has to reflect how much was left after the withdraws;
+- The initial_balance has to have the initial value before the withdraws, and the available_balance has to reflect how much was left after the withdraws;
 - validation_result shows if the withdraw happened or not.
 
 ## Result
@@ -147,8 +147,8 @@ Based on default input files for balances and withdraws found in `src/jobs/accou
 
 Alternatively, you may provide your own input CSV files for balance and/or withdraws.  Use parameters `-b`/`--balances`  and `-w`/`--withdraws`, for example:
 ```
-python src/main.py -b -w path/to/my/balances_file.csv -w path/to/my/withdraws_file.csv
-python src/main.py --balances -w path/to/my/balances_file.csv --withdraws path/to/my/withdraws_file.csv
+python src/main.py -b path/to/my/balances_file.csv -w path/to/my/withdraws_file.csv
+python src/main.py --balances path/to/my/balances_file.csv --withdraws path/to/my/withdraws_file.csv
 ``` 
 
 # Improvements
